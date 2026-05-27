@@ -1,0 +1,98 @@
+.models-hero {
+  padding: clamp(120px, 16vw, 180px) clamp(20px, 6vw, 84px) clamp(56px, 8vw, 96px);
+  background:
+    linear-gradient(90deg, rgba(6, 17, 29, 0.95), rgba(6, 17, 29, 0.72)),
+    url("assets/model-transformational-business.jpg") center 35% / cover;
+  border-bottom: 1px solid var(--line);
+}
+
+.models-hero h1 {
+  max-width: 980px;
+  margin-bottom: 24px;
+  font-size: clamp(48px, 7vw, 96px);
+}
+
+.models-hero p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+.model-feature,
+.model-grid {
+  padding: clamp(56px, 8vw, 100px) clamp(20px, 6vw, 84px);
+}
+
+.model-feature {
+  background: #08121f;
+}
+
+.model-feature article {
+  display: grid;
+  grid-template-columns: minmax(260px, 420px) minmax(0, 1fr);
+  gap: clamp(28px, 6vw, 78px);
+  align-items: center;
+}
+
+.model-feature img,
+.model-card img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.model-feature h2 {
+  margin-bottom: 22px;
+}
+
+.model-feature p:not(.eyebrow),
+.model-card p {
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  background: #0b1724;
+}
+
+.model-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(240, 178, 63, 0.2);
+  border-radius: 8px;
+}
+
+.model-card.wide {
+  grid-column: span 2;
+}
+
+.model-card h2 {
+  margin: 6px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1;
+}
+
+.model-card p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+  .model-grid,
+  .model-feature article {
+    grid-template-columns: 1fr;
+  }
+
+  .model-card.wide {
+    grid-column: auto;
+  }
+}
