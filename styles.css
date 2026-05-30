@@ -510,6 +510,12 @@ h3 {
   font-size: 13px;
 }
 
+.site-footer .presented-note {
+  margin-top: 6px;
+  color: #6f7b89;
+  font-size: 12px;
+}
+
 .site-footer .music-note a {
   color: var(--gold);
   font-weight: 800;
