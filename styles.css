@@ -504,6 +504,12 @@ h3 {
   margin: 0;
 }
 
+.site-footer .music-note {
+  margin-top: 6px;
+  color: #8f9cac;
+  font-size: 13px;
+}
+
 @media (max-width: 860px) {
   .site-header {
     position: fixed;
