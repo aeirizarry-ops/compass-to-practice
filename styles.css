@@ -369,6 +369,62 @@ h3 {
   font-size: 17px;
 }
 
+.books {
+  background: #071522;
+}
+
+.books .section-heading > p {
+  max-width: 420px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.book-card {
+  display: flex;
+  min-height: 320px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(24px, 4vw, 34px);
+  background: linear-gradient(145deg, #0c1e2e, #071522);
+  border: 1px solid rgba(240, 178, 63, 0.22);
+  border-radius: 8px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
+}
+
+.book-card.featured-book {
+  background: linear-gradient(145deg, rgba(240, 178, 63, 0.2), #0c1e2e);
+  border-color: rgba(240, 178, 63, 0.5);
+}
+
+.book-status {
+  margin-bottom: 28px;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.book-card h3 {
+  max-width: 18ch;
+  margin-bottom: 28px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 4vw, 46px);
+  line-height: 1.02;
+}
+
+.book-card p:not(.book-status) {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
 .programs {
   background: #0b1724;
 }
@@ -550,6 +606,7 @@ h3 {
   .author,
   .section-heading,
   .feature,
+  .book-grid,
   .episode-list {
     grid-template-columns: 1fr;
   }
