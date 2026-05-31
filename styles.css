@@ -310,26 +310,27 @@ h3 {
 
 .author {
   display: grid;
-  grid-template-columns: minmax(180px, 280px) minmax(0, 820px);
-  gap: clamp(30px, 7vw, 96px);
+  grid-template-columns: minmax(140px, 180px) minmax(0, 820px);
+  gap: clamp(28px, 6vw, 72px);
   align-items: center;
   background: #08121f;
   border-top: 1px solid var(--line);
 }
 
 .author-photo {
-  width: min(100%, 250px);
+  width: min(100%, 160px);
   margin: 0;
+  justify-self: center;
 }
 
 .author-photo img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 28%;
-  border: 1px solid rgba(240, 178, 63, 0.3);
-  border-radius: 8px;
+  object-position: center;
+  border: 2px solid rgba(240, 178, 63, 0.55);
+  border-radius: 50%;
   box-shadow: var(--shadow);
 }
 
@@ -552,7 +553,8 @@ h3 {
   }
 
   .author-photo {
-    width: min(100%, 230px);
+    width: 132px;
+    justify-self: start;
   }
 
   .section-copy {
