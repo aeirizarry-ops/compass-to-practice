@@ -310,27 +310,28 @@ h3 {
 
 .author {
   display: grid;
-  grid-template-columns: minmax(140px, 180px) minmax(0, 820px);
-  gap: clamp(28px, 6vw, 72px);
+  grid-template-columns: minmax(110px, 150px) minmax(0, 820px);
+  gap: clamp(24px, 5vw, 64px);
   align-items: center;
   background: #08121f;
   border-top: 1px solid var(--line);
 }
 
-.author-photo {
-  width: min(100%, 160px);
-  margin: 0;
-  justify-self: center;
-}
-
-.author-photo img {
-  display: block;
-  width: 100%;
+.author-mark {
+  display: grid;
+  width: min(100%, 118px);
   aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center;
+  justify-self: center;
+  place-items: center;
+  color: #06111d;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.9) 0 3px, transparent 4px),
+    conic-gradient(from 45deg, var(--gold), #fff3bd, var(--gold-dark), var(--gold));
   border: 2px solid rgba(240, 178, 63, 0.55);
   border-radius: 50%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 7vw, 70px);
+  font-weight: 700;
   box-shadow: var(--shadow);
 }
 
@@ -552,8 +553,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .author-photo {
-    width: 132px;
+  .author-mark {
+    width: 88px;
     justify-self: start;
   }
 
