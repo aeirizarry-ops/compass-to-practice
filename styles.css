@@ -491,6 +491,37 @@ h3 {
   font-size: 19px;
 }
 
+.episode-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.episode-actions a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  color: #06111d;
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.episode-actions a.secondary-link {
+  color: var(--ink);
+  background: transparent;
+  border-color: rgba(240, 178, 63, 0.44);
+}
+
+.episode-actions a:hover {
+  transform: translateY(-1px);
+}
+
 .episode-card.start-here {
   background: linear-gradient(145deg, rgba(240, 178, 63, 0.2), #0c1e2e);
   border-color: rgba(240, 178, 63, 0.48);
@@ -653,7 +684,9 @@ h3 {
   .hero-actions .button,
   .contact-band .button,
   .social-links,
-  .social-links a {
+  .social-links a,
+  .episode-actions,
+  .episode-actions a {
     width: 100%;
   }
 
