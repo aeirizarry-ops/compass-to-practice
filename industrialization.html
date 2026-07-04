@@ -3,170 +3,96 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Compass To Practice | Industrialization</title>
+    <title>Industrialization Readiness | Compass To Practice</title>
     <meta
       name="description"
-      content="Compass To Practice industrialization guidance for turning leadership intent into visible flow, disciplined quality, and repeatable operating practice."
+      content="Compass To Practice helps teams turn product design into repeatable execution by aligning process, people, quality, tooling, layout, and launch control before ramp pressure exposes the gaps."
     />
+    <meta property="og:title" content="Industrialization Readiness | Compass To Practice" />
+    <meta
+      property="og:description"
+      content="Compass To Practice helps teams turn product design into repeatable execution by aligning process, people, quality, tooling, layout, and launch control before ramp pressure exposes the gaps."
+    />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="models.css" />
     <style>
-      .industrial-hero {
-        background:
-          linear-gradient(90deg, rgba(6, 17, 29, 0.96), rgba(6, 17, 29, 0.74)),
-          url("assets/model-industrial-compass.jpg") center 32% / cover;
+      body {
+        background: #050b13;
       }
 
-      .industrial-hero h1 {
-        max-width: 980px;
-      }
-
-      .industrial-hero p:not(.eyebrow) {
-        max-width: 780px;
-      }
-
-      .industrial-note {
-        display: inline-flex;
+      .visual-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
         align-items: center;
-        gap: 10px;
-        margin-top: 22px;
-        padding: 10px 14px;
-        color: var(--ink);
-        border: 1px solid rgba(240, 178, 63, 0.35);
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.06);
-        font-size: 13px;
-        font-weight: 800;
-        letter-spacing: 0.02em;
+        gap: 12px;
+        padding: 14px 18px;
+        background: rgba(5, 11, 19, 0.82);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(240, 178, 63, 0.16);
       }
 
-      .industrial-link-grid {
-        margin-top: 22px;
+      .visual-header .brand-mark {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 auto;
+        border-radius: 50%;
+      }
+
+      .story {
+        width: min(1440px, 100%);
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      .story figure {
+        margin: 0;
+        background: #fff;
+      }
+
+      .story img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .story figure + figure {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
       }
 
       @media (max-width: 860px) {
-        .industrial-hero {
-          background:
-            linear-gradient(180deg, rgba(6, 17, 29, 0.94), rgba(6, 17, 29, 0.78)),
-            url("assets/model-industrial-compass.jpg") center 25% / cover;
+        .visual-header {
+          padding: 12px 14px;
+        }
+
+        .visual-header .brand-mark {
+          width: 38px;
+          height: 38px;
         }
       }
     </style>
   </head>
   <body>
-    <header class="site-header" aria-label="Primary navigation">
-      <a class="brand" href="index.html" aria-label="Compass To Practice home">
-        <img
-          class="brand-mark"
-          src="assets/compass-badge-logo.jpg"
-          alt=""
-          width="1130"
-          height="1130"
-          aria-hidden="true"
-        />
-        <span>Compass To Practice</span>
+    <header class="visual-header" aria-label="Home link">
+      <a href="index.html" aria-label="Compass To Practice home">
+        <img class="brand-mark" src="assets/compass-badge-logo.jpg" alt="Compass To Practice" width="1130" height="1130" />
       </a>
-      <nav class="nav-links" aria-label="Site sections">
-        <a href="index.html#approach">Approach</a>
-        <a href="models.html">Models</a>
-        <a href="industrialization.html" aria-current="page">Industrialization</a>
-        <a href="index.html#books">Books</a>
-        <a href="index.html#author">Author</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
     </header>
 
-    <main>
-      <section class="models-hero industrial-hero">
-        <p class="eyebrow">Industrial readiness</p>
-        <h1>From leadership intent to a stable operating system.</h1>
-        <p>
-          Industrialization at Compass To Practice is the discipline of turning
-          ideas into repeatable execution. It connects truth, flow, quality,
-          cadence, and ownership so leaders can see problems early and improve
-          the system before pressure turns into failure.
-        </p>
-        <div class="industrial-note">
-          Built from the same leadership models that drive the Compass To Practice system.
-        </div>
-        <div class="industrial-link-grid industrial-links" aria-label="Industrialization related models">
-          <a href="models.html#transformational-business">Core idea</a>
-          <a href="models.html#truth-to-stewardship">Accountability</a>
-          <a href="models.html#integrated-improvement">Improvement path</a>
-        </div>
-      </section>
-
-      <section class="model-feature">
-        <article>
-          <img src="assets/model-constraint-flow-diagnostic.jpg" alt="Constraint to Flow Diagnostic model" />
-          <div>
-            <p class="eyebrow">Why it matters</p>
-            <h2>Industrial work needs truth that moves early.</h2>
-            <p>
-              The goal is not more reporting. The goal is better signal. When
-              constraints, defects, and delays become visible sooner, leaders
-              can align people, process, and standards before the work drifts.
-            </p>
-            <p>
-              Industrialization makes escalation practical, coaching consistent,
-              and improvement measurable. It creates a rhythm where quality and
-              flow are designed into the operating model instead of left to
-              chance.
-            </p>
-          </div>
-        </article>
-
-        <article>
-          <img src="assets/model-gemba-walk-guide.jpg" alt="Gemba Walk Guide model" />
-          <div>
-            <p class="eyebrow">Leader behavior</p>
-            <h2>Go to the work. Ask better questions. Protect the signal.</h2>
-            <p>
-              Industrialization depends on what leaders notice and what they do
-              when they notice it. Gemba-style observation, clear standards,
-              and fast follow-up keep the operating system honest.
-            </p>
-            <p>
-              The result is a place where people escalate earlier, teams coach
-              to standard, and the organization learns from real conditions
-              instead of polished summaries.
-            </p>
-          </div>
-        </article>
-      </section>
-
-      <section class="model-grid" aria-label="Industrialization pillars">
-        <article class="model-card">
-          <img src="assets/model-integrated-improvement-path.jpg" alt="Integrated Improvement Path" />
-          <h2>Flow before friction</h2>
-          <p>Design work so constraints surface where they can be handled, not after they have multiplied.</p>
-        </article>
-        <article class="model-card">
-          <img src="assets/model-3p-alignment-map.jpg" alt="3P Alignment Map" />
-          <h2>Product, process, people</h2>
-          <p>Keep the promised value, the way work moves, and the people doing it aligned.</p>
-        </article>
-        <article class="model-card">
-          <img src="assets/model-industrial-compass.jpg" alt="Industrial Compass" />
-          <h2>Leadership behavior</h2>
-          <p>Humility, clarity, courage, and empathy keep truth moving through the system.</p>
-        </article>
-        <article class="model-card wide">
-          <img src="assets/model-norevia-system.jpg" alt="The Norevia System" />
-          <h2>Cadence and escalation</h2>
-          <p>Regular routines make it safe to raise issues and clear to own the next action.</p>
-        </article>
-        <article class="model-card wide">
-          <img src="assets/model-truth-to-stewardship-leader.jpg" alt="Truth to Stewardship Ladder" />
-          <h2>Stewardship over blame</h2>
-          <p>Accountability should move work forward, not make truth expensive.</p>
-        </article>
-        <article class="model-card wide">
-          <img src="assets/model-two-cultures.jpg" alt="Two Cultures Model" />
-          <h2>AI that strengthens judgment</h2>
-          <p>Use technology to amplify visibility and support judgment, not to hide weak decisions.</p>
-        </article>
-      </section>
+    <main class="story" aria-label="Industrialization visual story">
+      <figure>
+        <img src="assets/industrial-problem.jpg" alt="Industrialization readiness problem visual" />
+      </figure>
+      <figure>
+        <img src="assets/industrial-point-of-view.jpg" alt="Compass To Practice industrialization point of view visual" />
+      </figure>
+      <figure>
+        <img src="assets/industrial-readiness-path.jpg" alt="Compass To Practice industrialization readiness path visual" />
+      </figure>
+      <figure>
+        <img src="assets/industrial-work-with-you.jpg" alt="How Compass To Practice works with you visual" />
+      </figure>
     </main>
   </body>
 </html>
