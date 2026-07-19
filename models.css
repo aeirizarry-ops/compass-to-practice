@@ -59,6 +59,30 @@
   font-size: 18px;
 }
 
+.mobile-copy {
+  display: none;
+}
+
+.model-cta {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 24px;
+  padding: 12px 0;
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.model-cta::after {
+  margin-left: 10px;
+  content: ">";
+}
+
+.model-cta:hover,
+.model-cta:focus-visible {
+  color: #fff;
+}
+
 .model-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -100,5 +124,13 @@
 
   .model-card.wide {
     grid-column: auto;
+  }
+
+  .desktop-copy {
+    display: none;
+  }
+
+  .mobile-copy {
+    display: block;
   }
 }
