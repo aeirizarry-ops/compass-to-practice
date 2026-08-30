@@ -431,6 +431,15 @@ h3 {
   font-size: 17px;
 }
 
+.book-availability {
+  margin-top: 20px;
+}
+
+.book-update-link {
+  width: fit-content;
+  margin-top: 22px;
+}
+
 .programs {
   background: #0b1724;
 }
