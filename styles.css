@@ -491,6 +491,22 @@ h3 {
   line-height: 1.25;
 }
 
+.season-episode-copy {
+  min-width: 0;
+}
+
+.season-episode-status {
+  display: block;
+  margin-top: 6px;
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .author {
   display: grid;
   grid-template-columns: minmax(110px, 150px) minmax(0, 820px);
