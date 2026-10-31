@@ -371,7 +371,7 @@ h3 {
 }
 
 .season-preview-panel {
-  grid-template-columns: minmax(140px, 180px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
 }
 
@@ -381,7 +381,9 @@ h3 {
 }
 
 .season-cover {
+  width: min(100%, 430px);
   margin: 0;
+  justify-self: start;
   overflow: hidden;
   background: #071522;
   border: 1px solid var(--line);
@@ -1006,10 +1008,6 @@ h3 {
     position: static;
   }
 
-  .season-preview-panel {
-    grid-template-columns: minmax(140px, 180px) minmax(0, 1fr);
-  }
-
   .intro > div,
   .program-card {
     min-height: auto;
@@ -1061,7 +1059,6 @@ h3 {
   }
 
   .season-preview-panel {
-    grid-template-columns: 92px minmax(0, 1fr);
     gap: 14px;
   }
 
