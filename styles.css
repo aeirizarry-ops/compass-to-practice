@@ -552,6 +552,19 @@ h3 {
   letter-spacing: 0.04em;
 }
 
+.author-book-link {
+  color: var(--gold);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.author-book-link:hover,
+.author-book-link:focus-visible {
+  color: #ffd07a;
+}
+
 .disclaimer {
   padding: 0 clamp(20px, 6vw, 84px) clamp(72px, 10vw, 120px);
   background: #08121f;
